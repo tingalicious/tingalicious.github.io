@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>YinChannel</title>
+	<meta name="author" content="Ying-Ting Chen" />
+	<meta name="description" content="Media redirection channel" />
+	<meta name="keywords"  content="Redirection for all media related to Yinchannel" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	h2{
+		font-size: 4em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+	a{
+		color: #A9A9A9;
+	}
+	a:hover {
+		color:#D3D3D3;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:left;
+		color: #f2f2f2;
+	}
+
+	#header{
+		top:0px;
+		height: 50px;
+		padding: 20px 0 0 0;
+	}
+	#footer{
+		bottom:0px;
+		height: 20px;
+		padding: 0px 0 0 0;
+	}
+	
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(imgs/kaohsiung.jpg);
+		padding: 30% 0 0 0;
+	}
+	#section2{
+		background-image: url(imgs/ying6.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/statefair.jpg);
+		padding: 6% 0 0 0;
+		background-position: center;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(imgs/alishan.jpg);
+		background-position: center;
+		padding: 2% 0 0 0;
+	}
+	#slide2{
+		background-image: url(imgs/persona.jpg);
+		background-position: center;
+		padding: 2% 0 0 0;
+	}
+	#slide3{
+		background-image: url(imgs/leftshark.jpg);
+		background-position: center;
+		padding: 2% 0 0 0;
+	}
+	#slide4{
+		background-image:url(imgs/serena.jpg);
+		background-position: center;
+		padding: 2% 0 0 0;
+	}
+	#slide5{
+		background-image:url(imgs/coast.jpg);
+		background-position: center top;
+		padding: 2% 0 0 0;
+	}
+	#slide6{
+		background-image:url(imgs/writing.jpg);
+		background-position: center;
+		padding: 2% 0 0 0;
+		color: #f2f2f2;
+	}
+
+	/* Overwriting styles for the navigation dots (to place it where we want)
+	* --------------------------------------- */
+	.fp-slidesNav.bottom{
+		bottom: 25px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+				slidesNavigation: true,
+			});
+		});
+	</script>
+
+</head>
+<body>
+<!-- 
+<a href="https://github.com/alvarotrigo/fullPage.js" id="githubLink"><img style="position: fixed;z-index:99; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+ 
+<select id="demosMenu">
+  <option selected>Choose Demo</option>
+  <option id="backgrounds">Background images</option>
+  <option id="backgroundVideo">Background video</option>
+  <option id="gradientBackgrounds">Gradient backgrounds</option>
+  <option id="backgroundsFixed">Fixed fullscreen backgrounds</option>
+  <option id="looping">Looping</option>
+  <option id="noAnchor">No anchor links</option>
+  <option id="scrollingSpeed">Scrolling speed</option>
+  <option id="easing">Easing</option>
+  <option id="callbacks">Callbacks</option>
+  <option id="css3">CSS3</option>
+  <option id="continuous">Continuous scrolling</option>
+  <option id="normalScroll">Normal scrolling</option>
+  <option id="scrollBar">Scroll bar enabled</option>
+  <option id="scrolling">Scroll inside sections and slides</option>
+  <option id="navigationV">Vertical navigation dots</option>
+  <option id="navigationH">Horizontal navigation dots</option>
+  <option id="fixedHeaders">Fixed headers</option>
+  <option id="apple">Apple iPhone demo (animations)</option>
+  <option id="oneSection">One single section</option>
+  <option id="responsiveHeight">Responsive Height</option>
+  <option id="responsiveWidth">Responsive Width</option>
+  <option id="methods">Methods</option>
+</select>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alvarotrigo.com/fullPage/" data-text="Great plugin to create fullscreen scrolling websites: http://alvarotrigo.com/fullPage/">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ -->
+<div id="header">
+<p><b><font face="arial"><a href="index.htm" title="home">Home</a></font> | <a href="about.html" title="about">About Me</a> | <a href="mailto:tingy0314@gmail.com">Contact</a><span style="Float:right; color:#a9a9a9">Scroll to explore!</span></b></p>
+</div>
+<div id="fullpage">
+	<div class="section " id="section0">
+		<h1>YinChannel</h1>
+		<p>A personal quest for content creation</p>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h2>What do I do?</h2>
+				<p>I tend to exercise my creativity in lots of different fun ways. Depending on what you're looking for, you'll want to look in a few different places. Scroll left or right to find out more!</p>
+			</div>
+		</div>
+		<div class="slide" id="slide2">
+			<h1>Directed here during a con?</h1>
+			<p>You can find photos and videos from cons on my Flickr page</p>
+			<a href="http://www.flickr.com/photos/134791955@N06/albums" title="See my photos on Flickr!"><img src="imgs/flickrbutton.png" width="147" height="26" alt="" align="middle"></a>
+		</div>
+		<div class="slide" id="slide3">
+			<h1>Stumble here after watching a video?</h1>
+			<p>You can find our twitch.tv stream online every Sunday night with a new cosplay & cooking feature!</p>
+			<a href="http://www.twitch.tv/notearsonlystreamsnow/" title="Follow me on twitch"><img src="imgs/twitch.png" width="147" alt="" align="middle"></a>
+		</div>
+		<div class="slide" id="slide4">
+			<h1>Like my cosplays at a con?</h1>
+			<p>You can get in touch with me and send photos to my cosplay page on facebook!</p>
+			<a href="http://www.facebook.com/yinchann" title="Find me on facebook"><img src="imgs/facebook.png" width="147" alt="" align="middle"></a> 
+		</div>
+		<div class="slide" id="slide5">
+			<div class="intro">
+			<h1 style="Color:#000000">Craving more of my art?</h1>
+			<p style="Color:#000000">Unfortunately my deviantart was closed down a few months ago. Check back later to see if I get around to opening another one!</p>
+			</div>
+		</div>
+		<div class="slide" id="slide6">
+			<div class="intro">
+			<h1>Wanting to read more of my writing?</h1>
+			<p>My terrible fanfictions full of inappropriate ships were scattered throughout the internet, and I am currently in the process of recollecting and aggregating them. Check back later for more information!</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Professional Projects</h1>
+			<p>As an experienced developer that has worked extensively in business systems, I have completed multiple projects for firms looking to implement SAP SuccessFactors HCM, Oracle PeopleSoft CRM, and Trailblazer. Contact me on linkedIn for more information!</p>
+			<a href="https://www.linkedin.com/pub/ying-ting-chen/1b/249/986" title="connect with me on linkedin"><img src="imgs/linkedin.png" width="147" alt="" align="middle"></a>
+		</div>
+	</div>
+	<div id="footer">
+	&copy Copyright Ying-Ting Chen 2015 <span style="Float:right;"> tingy0314@gmail.com </span>
+	</div>
+<!--	<div class="section" id="section3"><h1>One Image = One thousand words</h1></div> -->
+</div>
+
+</body>
+</html>
