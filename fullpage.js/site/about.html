@@ -48,7 +48,7 @@
 	.wrap{
 		margin-left: auto;
 		margin-right: auto;
-		width: 980px;
+		width: 75%;
 		position: relative;
 		padding: 20px 0 20px 0;
 	}
@@ -104,6 +104,23 @@
 		bottom:0px;
 		height: 20px;
 		padding: 0px 0 0 0;
+	}
+	
+	#footer{
+		bottom:0px;
+		height: 100%;
+		padding: 0px 0 0 0;
+		display: block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:left;
+		color: #f2f2f2;
+	}
+	#footer .content{
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	/* Backgrounds will cover all the section
@@ -276,6 +293,7 @@
 				scrollBar: false,
 				autoScrolling: false,
 				fitToSection: false,
+				menu: '#menu',
 				css3: true
 			});
 		});
@@ -302,8 +320,8 @@
 			<!--TODO: add email/contact info here -->
 			
 				<div class="photobanner">
-                    <a href="https://flic.kr/s/aHskn8MCdX" title="New York Comic Con Day 1"><img class="first" src="imgs/sylveon.jpg" alt="" height="233"></a>
-                    <a href="twitch.tv/notearsonlystreamsnow" title="Cosplay & Cooking"><img src="imgs/leftshark.jpg" alt="" height="233"></a>
+                    <a target="_blank" href="https://flic.kr/s/aHskn8MCdX" title="New York Comic Con Day 1"><img class="first" src="imgs/sylveon.jpg" alt="" height="233"></a>
+                    <a target="_blank" href="twitch.tv/notearsonlystreamsnow" title="Cosplay & Cooking"><img src="imgs/leftshark.jpg" alt="" height="233"></a>
                     <img src="imgs/lcs.jpg" alt="" height="233">
                     <img src="imgs/hamuko.jpg" alt="" height="233">
                     <img src="imgs/statefair.jpg" alt="" height="233">
@@ -361,8 +379,21 @@
 		</div>
 </div>
 
-	<div id="footer">
+	<!--<div id="footer">
 	&copy Copyright Ying-Ting Chen 2016 | This section still under construction <span style="Float:right;"> tingy0314@gmail.com </span>
+	</div>-->
+	<div id="footer" class="section-footer">
+		<div class="content">
+			&copy Copyright Ying-Ting Chen 2016 <span style="Float:right;"> tingy0314@gmail.com </span>
+			</br>
+			</br>
+				<a target="_blank" href="https://www.linkedin.com/in/ying-ting-chen-9862491b"><img src="imgs/linkedinbtn.png" alt="" height="45"></a>
+			<span style="Float:right;">
+				<a target="_blank" href="https://www.instagram.com/yingalicious"><img src="imgs/instagram.png" alt="" height="45"></a>
+				<a target="_blank" href="imgs/snapcodes.png"><img src="imgs/snapcodes.png" alt="" height="45"></a>
+				<a target="_blank" href="https://www.facebook.com/YinChannel/"><img src="imgs/fblogo.png" alt="" height="45"></a>
+			</span>
+		</div>
 	</div>
 </body>
 </html>
