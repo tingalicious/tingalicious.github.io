@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Scroll bar enabled - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,scrollbar,scroll,bar,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+	
+
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#introSlide{
+		background-image: url();
+		background-position: center;
+		padding: 6% 0 0 0;
+		color: #f2f2f2;
+	}
+	#studioTests{
+		background-image: url(imgs/maurice.JPG);
+		background-position: center;
+		padding 1% 0 0 0;
+	}
+	#slide0{
+		background-image: url();
+		background-position: center;
+		padding 1% 0 0 0;
+	}
+	#slide1{
+		background-image: url();
+		background-position: center;
+		padding: 1% 0 0 0;
+	}
+	#slide2{
+		background-image: url(imgs/borderlands.jpg);
+		background-position: center;
+		padding: 1% 0 0 0;
+	}
+	#slide3{
+		background-image: url(imgs/persona.jpg);
+		background-position: center;
+		padding: 1% 0 0 0;
+	}
+	#slide4{
+		background-image: url(imgs/zirene.jpg);
+		background-position: center;
+		padding: 1% 0 0 0;
+	}
+	#slide5{
+		background-image:url(imgs/statefair.jpg);
+		background-position: center;
+		padding: 1% 0 0 0;
+	}
+	#slide6{
+		background-image:url(imgs/serena.jpg);
+		background-position: center top;
+		padding: 1% 0 0 0;
+	}
+	#slide7{
+		background-image:url(imgs/cory.jpg);
+		background-position: center;
+		padding: 1% 0 0 0;
+		color: #f2f2f2;
+	}
+	#slide8{
+		background-image:url(imgs/slade.jpg);
+		background-position: center;
+		padding: 1% 0 0 0;
+		color: #f2f2f2;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				slidesNavigation: true,
+				scrollBar: true,
+				sectionsColor: ['#009cef', '#C63DOF', '#1BBC9B', '#7E8F7C', '#009cef']
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section " id="welcomeSection">
+		<div class="slide" id="introSlide">
+			<div class="intro">
+				<h1>YinChannel</h1>
+				<p>Helping you do you, but better</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="photoSection">
+	    <div class="slide" id="photographyHome">
+			<div class="intro">
+				<h2>Photography Content</h2>
+				<p>Scroll left and right to explore photography projects associated with YinChannel!</p>
+			</div>
+		</div>
+		<div class="slide" id="studioTests">
+			<div class="intro">
+				<h1>Studio Tests</h1>
+				<p>Photos from around our studio can be found on the YinChannel flickr page!</p>
+				<a href="https://flic.kr/s/aHskqxY2ej" title="See my photos on Flickr!"><img src="imgs/flickrbutton.png" width="147" height="26" alt="" align="middle"></a>
+			</div>
+		</div>
+		<div class="slide" id="slide8">
+			<div class="intro">
+			<h1>Anime North Texas 2015</h1>
+			<p>Photos and videos can be found on the YinChannel Flickr page</p>
+			<a href="https://www.flickr.com/gp/134791955@N06/p93DPf" title="See my photos on Flickr!"><img src="imgs/flickrbutton.png" width="147" height="26" alt="" align="middle"></a>
+			</div>
+		</div>
+		<div class="slide" id="slide2">
+			<div class="intro">
+			<h1>Izumicon 2015</h1>
+			<p>Photos and videos can be found on the YinChannel Flickr page</p>
+			<a href="https://flic.kr/s/aHsknCFtqc" title="See my photos on Flickr!"><img src="imgs/flickrbutton.png" width="147" height="26" alt="" align="middle"></a>
+			</div>
+		</div>
+		<div class="slide" id="slide3">
+			<div class = "intro">
+			<h1>Anime Expo 2015</h1>
+			<p>You can find photos and videos from cons on the YinChannel Flickr page</p>
+			<a href="https://flic.kr/s/aHsknrEy3Y" title="See my photos on Flickr!"><img src="imgs/flickrbutton.png" width="147" height="26" alt="" align="middle"></a>
+			</div>
+		</div>
+		<div class="slide" id="slide4">
+			<div class = "intro">
+			<h1>NALCS 2015</h1>
+			<p>North American League of Legends Championship 2015 Series Summer Split Week 6 Day 2</p>
+			<a href="https://flic.kr/s/aHskneicMk" title="See my photos on Flickr!"><img src="imgs/flickrbutton.png" width="147" height="26" alt="" align="middle"></a>
+			</div>
+		</div>
+		<div class="slide" id="slide5">
+			<div class = "intro">
+			<h1>Oklahoma State Fair 2015</h1>
+			<p>You can find our photos from the Oklahoma State Fair here!</p>
+			<a href="https://flic.kr/s/aHskm69g9b" title="See my photos on Flickr!"><img src="imgs/flickrbutton.png" width="147" height="26"alt="" align="middle"></a> 
+			</div>
+		</div>
+		<div class="slide" id="slide6">
+			<div class="intro">
+			<h1>New York Comic Con 2015</h1>
+			<p>Photos can be found here</p>
+			<a href="https://flic.kr/s/aHskn9AayG" title="See my photos on Flickr!"><img src="imgs/flickrbutton.png" width="147" height="26" alt="" align="middle"></a>
+			</div>
+		</div>
+
+	</div>
+	<div class="section" id="videoSection">
+		<div class="slide" id="videoHome">
+			<div class="intro">
+				<h1>Video Projects</h1>
+				<p>Scroll left and right to explore our video projects!</p>
+			</div>
+		</div>
+		<div class="slide" id="twitchStream">
+			<div class="intro">
+				<h1>Follow us on Twitch!</h1>
+				<p>Our Main Twitch stream is a learning channel, dedicated to honing different skills every Sunday! We're currently on hiatus, but follow us for updates on when we'll be back!</p>
+				<a href="http://www.twitch.tv/notearsonlystreamsnow/" title="Follow me on twitch"><img src="imgs/twitch.png" width="147" alt="" align="middle"></a>
+			</div>
+		</div>
+		<div class="slide" id="youtubeLink">
+			<div class="intro">
+				<h1>Follow us on YouTube!</h1>
+				<p>Our YouTube channel follows our highlights on the learning process when it comes to honing skills for different types of content creation!</p>
+				<p>a href="insert youtube link here"</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="cosplaySection">
+		<div class="slide" id="cosplayHome">
+			<div class="intro">
+				<h1>Cosplay Projects</h1>
+				<p>Scroll left and right to explore our cosplay projects!</p>
+			</div>
+		</div>
+		<div class="slide" id="chanlandFacebook">
+			<div class="intro">
+				<h1>ChanLand Official Cosplay Page</h1>
+				<p>Follow the official page for ChanLand Cosplay here!</p>
+				<a href="http://www.facebook.com/chanlandcosplay" title="Find me on facebook"><img src="imgs/facebook.png" width="147" alt="" align="middle"></a> 
+			</div>
+		</div>
+		<div class="slide" id="yinchannelFacebook">
+			<div class="intro">
+				<h1>Yin's Official Cosplay Page</h1>
+				<p>Follow the official page for Yin's Cosplay here!</p>
+				<a href="http://www.facebook.com/yinchann" title="Find me on facebook"><img src="imgs/facebook.png" width="147" alt="" align="middle"></a> 
+			</div>
+		</div>
+	</div>
+	<div class="section" id="artSection">
+		<div class="slide" id="artHome">
+			<div class="intro">
+				<h1>Art Projects</h1>
+				<p>Scroll left and right to explore our art projects!</p>
+			</div>
+		</div>
+		<div class="slide" id="frequentContacts">
+			<div class="intro">
+				<h1>Frequent Contacts</h1>
+				<p>To find our sporadic webcomic concerning adventures in the office, follow our blog!</p>
+				<a href="http://www.frequentcontacts.blogspot.com" title="Follow us on Blogger"><img src="imgs/blogger.png" width="147" alt="" align="middle"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
